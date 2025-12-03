@@ -6,6 +6,10 @@
 
 TMDB(The Movie Database) API를 활용하여 최신 영화 정보를 제공하고, 사용자가 관심 있는 영화의 개봉일을 캘린더에 추가하거나 푸시 알림으로 받아볼 수 있는 앱입니다. iOS와 Android 양쪽 플랫폼을 지원하며, 네이티브 모듈을 활용하여 플랫폼별 특화 기능을 구현했습니다.
 
+## 📸 시현 영상
+| <img src="assets/preview.gif" width="300" /> |
+[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)]([https://youtu.be/cbqwafX-eoA](https://youtube.com/shorts/esW5zpTkxvs))
+
 ## ✨ 주요 기능
 
 ### 1. 영화 정보 조회
@@ -49,24 +53,6 @@ TMDB(The Movie Database) API를 활용하여 최신 영화 정보를 제공하�
 - **@notifee/react-native** - 로컬 푸시 알림
 - **Moment.js** - 날짜 처리
 - **FontAwesome** - 아이콘
-
-## 📸 시현 영상
-
-> 💡 **시현 영상 제안:**
->
-> 다음 내용을 포함한 1-2분 분량의 시연 영상이 효과적입니다:
->
-> 1. **앱 시작 화면** - 앱 로딩 및 첫 화면
-> 2. **영화 리스트 탐색** - 스크롤, 영화 카드 확인
-> 3. **영화 상세 정보** - 상세 페이지 이동, 정보 확인
-> 4. **캘린더 추가 기능** - 개봉일 캘린더에 추가하는 과정
-> 5. **푸시 알림 예약** - 알림 설정 및 예약된 알림 목록 확인
-> 6. **푸시 알림 수신** - 실제 알림이 오는 모습 (시뮬레이션 가능)
-
-```
-[시현 영상 링크를 여기에 추가하세요]
-예: YouTube, Vimeo, 또는 GIF 링크
-```
 
 ## 🚀 설치 및 실행
 
