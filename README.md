@@ -8,7 +8,7 @@ TMDB(The Movie Database) API를 활용하여 최신 영화 정보를 제공하�
 
 ## 📸 시현 영상
 | <img src="assets/preview.gif" width="300" /> |
-[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)]([https://youtu.be/cbqwafX-eoA](https://youtube.com/shorts/esW5zpTkxvs))
+[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/shorts/esW5zpTkxvs)
 
 ## ✨ 주요 기능
 
