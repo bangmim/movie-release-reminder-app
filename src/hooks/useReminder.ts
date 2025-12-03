@@ -69,10 +69,24 @@ const useReminder = () => {
       if (channelId == null) {
         throw new Error('Channel is not created');
       }
+
+      // 개발 모드에서 오늘 날짜인 경우 테스트용으로 5초 후에 알림 설정
+      let notificationTimestamp = moment(releaseDate).valueOf();
+      if (__DEV__) {
+        const releaseMoment = moment(releaseDate);
+        const today = moment().startOf('day');
+        const releaseDay = releaseMoment.startOf('day');
+
+        // 오늘 날짜인 경우 5초 후로 설정
+        if (releaseDay.isSame(today)) {
+          notificationTimestamp = moment().add(5, 'seconds').valueOf();
+        }
+      }
+
       // Create a time-based trigger
       const trigger: TimestampTrigger = {
         type: TriggerType.TIMESTAMP,
-        timestamp: moment(releaseDate).valueOf(),
+        timestamp: notificationTimestamp,
       };
 
       // Create a trigger notification
