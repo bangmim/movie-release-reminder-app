@@ -33,12 +33,25 @@ const useMovies = () => {
     });
 
   const movies = useMemo(() => {
-    return data?.pages.reduce<Movie[]>((allMovies, page) => {
+    const allMovies = data?.pages.reduce<Movie[]>((allMovies, page) => {
       if (page && 'results' in page) {
         return allMovies.concat(page.results);
       }
       return allMovies;
     }, []);
+
+    // 개봉일 순서로 정렬 (오름차순: 빠른 날짜부터)
+    return allMovies?.sort((a, b) => {
+      const dateA = moment(a.releaseDate);
+      const dateB = moment(b.releaseDate);
+
+      // 날짜가 없는 경우 뒤로 보냄
+      if (!dateA.isValid() && !dateB.isValid()) return 0;
+      if (!dateA.isValid()) return 1;
+      if (!dateB.isValid()) return -1;
+
+      return dateB.diff(dateA);
+    });
   }, [data]);
 
   const loadMore = useCallback(() => {
